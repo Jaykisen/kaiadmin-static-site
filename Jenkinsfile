@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git credentialsId: 'github-creds', url: 'https://github.com/<your-username>/<new-repo>.git', branch: 'main'
+                git credentialsId: 'github-creds', url: 'https://github.com/Jaykisen/kaiadmin-static-site.git', branch: 'main'
             }
         }
 
