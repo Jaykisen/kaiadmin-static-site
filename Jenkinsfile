@@ -15,11 +15,7 @@ pipeline {
             }
         }
 
-        stage('Build Docker Image Locally') {
-            steps {
-                sh "docker build -t ${IMAGE_NAME} ."
-            }
-        }
+        // Remove local build stage or comment it out
 
         stage('Deploy to Docker Host') {
             steps {
